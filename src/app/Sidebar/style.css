@@ -1,0 +1,20 @@
+.sidebar-container {
+    display: flex;
+    color: var(--aquamarine);
+    flex-direction: column;
+    font-size: small;
+    gap: 8px;
+}
+
+.sidebar-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0.5rem;
+}
+
+.sidebar-footer {
+    gap: 0.5rem;
+}

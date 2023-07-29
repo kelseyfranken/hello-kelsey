@@ -4,11 +4,13 @@
 import FadeIn from "react-fade-in/lib/FadeIn";
 import Typist from "react-typist";
 import "react-typist/dist/Typist.css"; // Import the Typist CSS file for cursor blink
+import Button from "@mui/material/Button";
+import MailOutlineIcon from "@mui/icons-material/MailOutline";
 
 function Landing(props) {
   return (
-    <FadeIn delay={100}>
-      <div className="pt-60 pl-56">
+    <FadeIn delay={50}>
+      <div className="pt-60 pl-56 flex gap-28">
         <div className="pt-32">
           <h1 className="text-aqua text-5xl font-bold">
             <Typist avgTypingDelay={120}>
@@ -27,6 +29,17 @@ function Landing(props) {
             ante, non congue leo nisi quis dolor. Etiam ut massa ut lacus
             ullamcorper fermentum.
           </p>
+          <Button
+            variant="outlined"
+            className="w-[301px] h-[139px] text-aqua border-aqua gap-2 mt-[57px] hover:bg-aqua hover:text-darkNavy hover:border-aqua"
+            onClick={(e) => {
+              window.location.href = "mailto:kfrankenb@gmail.com";
+              e.preventDefault();
+            }}
+          >
+            <MailOutlineIcon />
+            Message Me
+          </Button>
         </div>
       </div>
     </FadeIn>

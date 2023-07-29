@@ -5,13 +5,13 @@ import EmailIcon from "@mui/icons-material/Email";
 
 function Sidebar(props) {
   const sections = [
-    { title: "home", url: "/" },
-    { title: "about", url: "/about" },
-    { title: "experience", url: "/experience" },
-    { title: "projects", url: "/projects" },
+    { title: "home", url: "#home" },
+    { title: "about", url: "#about" },
+    { title: "experience", url: "#experience" },
+    { title: "projects", url: "#projects" },
   ];
   return (
-    <nav className="text-aqua flex flex-col gap-3 p-4 pb-32 pr-32 absolute bottom-0 right-0 w-fit max-sm:hidden">
+    <nav className="text-aqua flex flex-col gap-3 p-4 pb-32 pr-32 sticky bottom-0 left-full w-fit  max-sm:hidden">
       <div className="flex flex-col">
         {sections.map((section, index) => (
           <a

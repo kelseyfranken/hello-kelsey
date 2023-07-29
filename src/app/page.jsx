@@ -1,3 +1,14 @@
+import Landing from "src/components/Landing";
+
 export default function Home() {
-  return <div>Hello World</div>;
+  return (
+    <>
+      <section className="h-screen" id="home">
+        <Landing />
+      </section>
+      <section className="h-screen bg-lylla" id="about">
+        About
+      </section>
+    </>
+  );
 }

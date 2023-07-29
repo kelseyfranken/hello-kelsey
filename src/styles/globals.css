@@ -6,10 +6,10 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-  --rich-black: #061D30;
-  --aquamarine: #00F1C5;
-  --white: #FDFDFD;
-  --lavendar: #E0D6FF;
+  --dark-navy: #061D30;
+  --aqua: #00F1C5;
+  --snow: #FDFDFD;
+  --lylla: #E0D6FF;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -21,6 +21,6 @@
 }
 
 body {
-  color: var(--white);
-  background: var(--rich-black);
+  color: var(--snow);
+  background: var(--dark-navy);
 }

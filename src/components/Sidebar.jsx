@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
@@ -12,24 +11,34 @@ function Sidebar(props) {
     { title: "projects", url: "/projects" },
   ];
   return (
-    <nav className="text-aqua">
-      <div className="sidebar-body">
+    <nav className="text-aqua flex flex-col gap-3 p-4 pb-32 pr-32 absolute bottom-0 right-0 w-fit max-sm:hidden">
+      <div className="flex flex-col">
         {sections.map((section, index) => (
-          <a href={section.url} key={index}>
-            <strong>
-              {index}. {section.title}
-            </strong>
+          <a
+            href={section.url}
+            key={index}
+            className="font-bold text-l leading-normal hover:text-lylla"
+          >
+            {index}. {section.title}
           </a>
         ))}
       </div>
-      <div className="sidebar-footer">
-        <a href="https://github.com/kelseyfranken" target="_blank">
+      <div className="flex gap-2">
+        <a
+          href="https://github.com/kelseyfranken"
+          target="_blank"
+          className="hover:text-lylla"
+        >
           <GitHubIcon />
         </a>
-        <a href="https://www.linkedin.com/in/kelseyfranken/" target="_blank">
+        <a
+          href="https://www.linkedin.com/in/kelseyfranken/"
+          target="_blank"
+          className="hover:text-lylla"
+        >
           <LinkedInIcon />
         </a>
-        <a href="mailto:kfrankenb@gmail.com">
+        <a href="mailto:kfrankenb@gmail.com" className="hover:text-lylla">
           <EmailIcon />
         </a>
       </div>

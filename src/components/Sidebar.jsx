@@ -2,18 +2,18 @@
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
-import FadeIn from "react-fade-in/lib/FadeIn";
+import Slide from "react-reveal/Slide";
 
-function Sidebar(props) {
+function Sidebar() {
   const sections = [
-    { title: "home", url: "#home" },
+    { title: "home", url: "#" },
     { title: "about", url: "#about" },
     { title: "experience", url: "#experience" },
     { title: "projects", url: "#projects" },
   ];
   return (
     <nav className="text-aqua flex flex-col gap-3 p-4 pb-16 pr-20 sticky bottom-0 left-full w-fit max-sm:hidden">
-      <FadeIn delay={50}>
+      <Slide bottom>
         <div className="flex flex-col">
           {sections.map((section, index) => (
             <a
@@ -44,7 +44,7 @@ function Sidebar(props) {
             <EmailIcon />
           </a>
         </div>
-      </FadeIn>
+      </Slide>
     </nav>
   );
 }

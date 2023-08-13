@@ -12,7 +12,7 @@ function Sidebar(props) {
     { title: "projects", url: "#projects" },
   ];
   return (
-    <nav className="text-aqua flex flex-col gap-3 p-4 pb-32 pr-32 sticky bottom-0 left-full w-fit max-sm:hidden">
+    <nav className="text-aqua flex flex-col gap-3 p-4 pb-16 pr-20 sticky bottom-0 left-full w-fit max-sm:hidden">
       <FadeIn delay={50}>
         <div className="flex flex-col">
           {sections.map((section, index) => (

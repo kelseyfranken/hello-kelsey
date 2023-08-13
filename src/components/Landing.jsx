@@ -10,7 +10,7 @@ import MailOutlineIcon from "@mui/icons-material/MailOutline";
 function Landing(props) {
   return (
     <FadeIn delay={50}>
-      <div className="pt-36 flex flex-col max-sm:items-center md:pt-[30%] lg:pt-80 sm:pl-[10%]">
+      <div className="pt-36 md:pt-[30%] lg:pt-80 flex flex-col max-sm:items-center">
         <h1 className="text-aqua text-3xl font-bold sm:text-5xl">
           <Typist avgTypingDelay={120}>
             <Typist.Delay ms={600} />

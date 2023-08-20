@@ -19,7 +19,7 @@ export default function Home() {
       </Slide>
 
       <Slide bottom delay={500}>
-        <section className="h-screen" id="about">
+        <section className="h-screen" id="experience">
           <Experience />
         </section>
       </Slide>

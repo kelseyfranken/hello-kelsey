@@ -1,0 +1,8 @@
+.MuiTabs-indicator {
+    background-color: var(--aqua) !important;
+
+}
+
+.Mui-selected {
+    color: var(--aqua) !important;
+  }

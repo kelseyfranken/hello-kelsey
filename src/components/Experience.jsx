@@ -1,5 +1,4 @@
 import SectionTitle from "./SectionTitle";
-import "./styles/experience.css";
 import JobsTabs from "./JobsTabs";
 import Button from "@mui/material/Button";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";

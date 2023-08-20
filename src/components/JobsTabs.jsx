@@ -1,10 +1,13 @@
 import { useState } from "react";
+import Fade from "react-reveal/Fade";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import "./styles/experience.css";
 
 export default function JobsTabs() {
-  const isHorizontal = false;
+  const isHorizontal = window.innerWidth <= 640;
+  console.log(isHorizontal, "isHorizontal");
+
   const [value, setValue] = useState(0);
 
   const handleTabChange = (event, newValue) => {
@@ -21,7 +24,7 @@ export default function JobsTabs() {
         id={`vertical-tabpanel`}
         {...other}
       >
-        {value === index && <div p={3}>{children}</div>}
+        {value === index && <div>{children}</div>}
       </div>
     );
   }
@@ -55,14 +58,16 @@ export default function JobsTabs() {
   ];
 
   return (
-    <div className="flex flex-row gap-10">
+    <div className="flex flex-row gap-10 max-sm:flex-col max-sm:pl-8 max-sm:pr-12">
       <Tabs
-        orientation="vertical"
+        orientation={isHorizontal ? "horizontal" : "vertical"}
         value={value}
         onChange={handleTabChange}
         sx={{ borderRight: 3, borderColor: "divider" }}
-        className="w-32 text-lylla"
+        className="w-32 text-lylla max-sm:w-auto max-sm:border-0 sm:h-fit sm:max-h-48"
         textColor="lylla"
+        variant="scrollable"
+        scrollButtons="false"
       >
         {jobsList.map((job, idx) => (
           <Tab
@@ -80,17 +85,19 @@ export default function JobsTabs() {
           index={idx}
           key={`${idx}-${job.companyName}-tab-panel`}
         >
-          <span className="text-lylla font-bold text-2xl">
+          <span className="text-lylla font-bold text-2xl max-sm:text-xl">
             {job.jobTitle + ", "}
           </span>
-          <span className="text-aqua font-bold text-2xl">
+          <span className="text-aqua font-bold text-2xl max-sm:text-xl">
             {job.companyName}
           </span>
-          <div className="mt-2 text-lg">{job.duration}</div>
-          <ul className="mt-6 text-lg list-disc list-inside">
-            {job.description.map(function (descriptionItem, i) {
-              return <li key={i}>{descriptionItem}</li>;
-            })}
+          <div className="mt-2 text-lg max-sm:text-base">{job.duration}</div>
+          <ul className="mt-6 text-lg list-disc list-inside max-sm:text-base">
+            <Fade bottom>
+              {job.description.map(function (descriptionItem, i) {
+                return <li key={i}>{descriptionItem}</li>;
+              })}
+            </Fade>
           </ul>
         </TabPanel>
       ))}

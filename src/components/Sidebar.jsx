@@ -12,7 +12,7 @@ function Sidebar() {
     { title: "projects", url: "#projects" },
   ];
   return (
-    <nav className="text-aqua flex flex-col gap-3 p-4 pb-16 pr-20 sticky bottom-0 left-full w-fit max-sm:hidden">
+    <nav className="text-aqua flex flex-col gap-3 p-4 pb-16 pr-20 sticky bottom-0 left-full w-fit max-sm:hidden font-mono">
       <Slide bottom>
         <div className="flex flex-col">
           {sections.map((section, index) => (

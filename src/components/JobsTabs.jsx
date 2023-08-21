@@ -5,7 +5,7 @@ import Tab from "@mui/material/Tab";
 import "./styles/experience.css";
 
 export default function JobsTabs() {
-  const [isHorizontal, setIsHorizontal] = useState(window.innerWidth <= 640);
+  const [isHorizontal, setIsHorizontal] = useState(window.innerWidth <= 639);
   const [value, setValue] = useState(0);
 
   const handleTabChange = (event, newValue) => {
@@ -13,7 +13,7 @@ export default function JobsTabs() {
   };
 
   window.addEventListener("resize", () => {
-    setIsHorizontal(window.innerWidth <= 640);
+    setIsHorizontal(window.innerWidth <= 639);
   });
 
   function TabPanel(props) {

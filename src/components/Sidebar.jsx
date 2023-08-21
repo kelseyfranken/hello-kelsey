@@ -19,7 +19,7 @@ function Sidebar() {
             <a
               href={section.url}
               key={index}
-              className="font-bold text-l leading-normal hover:text-lylla"
+              className="font-bold text-l leading-normal hover:text-lylla hover:underline"
             >
               {index}. {section.title}
             </a>

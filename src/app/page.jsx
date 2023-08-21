@@ -2,27 +2,32 @@
 import About from "@/components/About";
 import Experience from "@/components/Experience";
 import Landing from "@/components/Landing";
+import Projects from "@/components/Projects";
 import Slide from "react-reveal/Slide";
 
 export default function Home() {
   return (
-    <div className="sm:pl-[10%]">
+    <>
       <Slide bottom>
-        <section className="h-screen">
+        <section className="h-screen sm:pl-[10%]">
           <Landing />
         </section>
       </Slide>
       <Slide bottom delay={500}>
-        <section className="h-screen" id="about">
+        <section className="h-screen sm:pl-[10%]" id="about">
           <About />
         </section>
       </Slide>
-
       <Slide bottom delay={500}>
-        <section className="h-screen" id="experience">
+        <section className="h-screen sm:pl-[10%]" id="experience">
           <Experience />
         </section>
       </Slide>
-    </div>
+      <Slide bottom delay={500}>
+        <section className="h-screen" id="projects">
+          <Projects />
+        </section>
+      </Slide>
+    </>
   );
 }

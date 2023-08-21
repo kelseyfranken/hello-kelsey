@@ -69,7 +69,7 @@ export default function JobsTabs() {
         className="w-32 text-lylla max-sm:w-auto max-sm:border-0 sm:h-fit sm:max-h-48"
         textColor="lylla"
         variant="scrollable"
-        scrollButtons="false"
+        scrollButtons={false}
       >
         {jobsList.map((job, idx) => (
           <Tab

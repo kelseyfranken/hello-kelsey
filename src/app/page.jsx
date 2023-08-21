@@ -1,6 +1,7 @@
 "use client";
 import About from "@/components/About";
 import Experience from "@/components/Experience";
+import Footer from "@/components/Footer";
 import Landing from "@/components/Landing";
 import Projects from "@/components/Projects";
 import Slide from "react-reveal/Slide";
@@ -24,10 +25,11 @@ export default function Home() {
         </section>
       </Slide>
       <Slide bottom delay={500}>
-        <section className="h-screen" id="projects">
+        <section id="projects">
           <Projects />
         </section>
       </Slide>
+      <Footer />
     </>
   );
 }

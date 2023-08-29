@@ -6,7 +6,7 @@ export default function Projects() {
     {
       title: "Work in Progress",
       description: "This is a sample project",
-      img: "/projects/wip.jpeg",
+      img: "/projects/hello-kelsey.png",
       languages: ["React", "JavaScript", "HTML", "CSS"],
     },
   ];

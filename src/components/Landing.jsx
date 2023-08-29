@@ -9,7 +9,7 @@ import MailOutlineIcon from "@mui/icons-material/MailOutline";
 function Landing() {
   return (
     <div className="pt-36 md:pt-[30%] lg:pt-80 flex flex-col max-sm:items-center">
-      <h1 className="text-aqua text-3xl font-bold sm:text-5xl">
+      <h1 className="text-aqua text-3xl font-bold sm:text-5xl font-mono">
         <Typist avgTypingDelay={120}>
           <Typist.Delay ms={600} />
           <span className="text-lylla"> Hello, I'm</span> Kelsey

@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Fade from "react-reveal/Fade";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";

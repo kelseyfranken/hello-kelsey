@@ -15,8 +15,8 @@ export default function MediaCard({ img, title, description, languages }) {
 
   return (
     <Card
-      sx={{ width: 345 }}
-      className="bg-navy hover:bg-lightNavy hover:shadow-lg hover:shadow-gray-900 hover:cursor-pointer"
+      sx={{ width: 345, borderRadius: "10px", margin: "1rem" }}
+      className="bg-navy hover:bg-lightNavy hover:shadow-lg hover:shadow-gray-900 hover:translate-y-[-8px] border border-navy"
     >
       <CardMedia sx={{ height: 140 }} image={img} title={title} />
       <CardContent>

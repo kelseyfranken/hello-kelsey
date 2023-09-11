@@ -11,7 +11,7 @@ export default function About() {
     "CSS",
   ];
   return (
-    <div className="pt-28 sm:pt-80 flex flex-col">
+    <div className="pt-28 sm:pt-60 sm:mb-60 flex flex-col">
       <SectionTitle name={"About"} number={"1"} />
       <div className="flex flex-col gap-3 max-sm:pl-[10%] max-w-3xl text-justify text-lg pr-20">
         <p>

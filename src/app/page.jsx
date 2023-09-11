@@ -15,12 +15,12 @@ export default function Home() {
         </section>
       </Slide>
       <Slide bottom delay={500}>
-        <section className="h-screen sm:pl-[10%]" id="about">
+        <section className="sm:pl-[10%]" id="about">
           <About />
         </section>
       </Slide>
       <Slide bottom delay={500}>
-        <section className="h-screen sm:pl-[10%]" id="experience">
+        <section className="sm:pl-[10%]" id="experience">
           <Experience />
         </section>
       </Slide>

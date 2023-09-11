@@ -67,7 +67,7 @@
   background: var(--snow);
   border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
 }
-@keyframes blink {
+@keyframes cat-blink {
   0% {
     height: 0;
   }
@@ -105,7 +105,7 @@
   width: 100%;
   border-radius: 0 0 50% 50% / 0 0 40% 40%;
   background: var(--dark-navy);
-  animation: blink 4s infinite ease-in;
+  animation: cat-blink 4s infinite ease-in;
 }
 
 .eye--left {

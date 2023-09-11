@@ -6,7 +6,7 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 export default function Experience() {
   const showCVButton = false; // TODO: Set to true and add link to CV
   return (
-    <div className="pt-28 sm:pt-80 flex flex-col">
+    <div className="pt-28 sm:mb-60 sm:pt-0 flex flex-col">
       <SectionTitle name={"Experience"} number={"2"} />
       <JobsTabs />
       {showCVButton && (

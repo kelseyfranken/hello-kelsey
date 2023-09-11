@@ -11,7 +11,7 @@ export default function Projects() {
     },
   ];
   return (
-    <div className="pt-28 sm:pt-80 flex flex-col">
+    <div className="pt-28 sm:pt-0 flex flex-col">
       <SectionTitle name={"Projects"} number={"3"} styles="sm:pl-[10%]" />
       <div className="flex justify-center lg:pl-[10%] lg:justify-normal">
         {projects.map((project, index) => (

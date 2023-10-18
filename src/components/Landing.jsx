@@ -20,16 +20,21 @@ function Landing() {
             <span className="text-lylla"> Hello, I'm</span> Kelsey
           </Typist>
         </h1>
-        <h2 className="text-2xl text-snow sm:text-3xl ">Software Engineer</h2>
-        <p className="pt-3 w-5/6 md:w-[500px] lg:w-[640px] text-justify text-base">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-          tortor purus, fringilla a ligula ut, lacinia vulputate odio. Etiam
-          sollicitudin vestibulum lacus, et condimentum enim vehicula quis.
-          Morbi elementum tortor erat, suscipit commodo lacus tincidunt ut.
-          Nulla ipsum orci, ultrices quis ligula et, tristique tincidunt nibh.
-          Proin convallis, ex eget dictum vehicula, velit nulla elementum ante,
-          non congue leo nisi quis dolor. Etiam ut massa ut lacus ullamcorper
-          fermentum.
+        <h2 className="text-2xl text-snow sm:text-3xl font-mono">
+          Software Engineer
+        </h2>
+        <p className="pt-3 w-5/6 md:w-[500px] lg:w-[640px] text-justify text-lg tracking-wider max-sm:text-base max-sm:tracking-wide">
+          I'm a Software Engineer currently based in Santiago, Chile. I have a
+          strong focus and passion for{" "}
+          <span className="font-bold text-aqua">Frontend development</span>. I
+          thrive on crafting visually appealing and user-friendly interfaces,
+          fixing UI bugs, and ensuring accessibility standards are met. My
+          journey in the tech world extends beyond the Frontend, as I've also
+          ventured into{" "}
+          <span className="font-bold text-aqua">Full Stack development</span>,
+          harnessing the power of TypeScript and Python. I love all things
+          coding and I am always looking for new opportunities to learn and
+          grow.
         </p>
         <Button
           variant="outlined"

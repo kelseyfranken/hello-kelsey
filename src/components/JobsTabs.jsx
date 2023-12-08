@@ -1,21 +1,35 @@
-import { useState } from "react";
+"use client";
+import { useState, useEffect } from "react";
 import Fade from "react-reveal/Fade";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import "./styles/experience.css";
 
 export default function JobsTabs() {
-  const [isHorizontal, setIsHorizontal] = useState(window.innerWidth <= 639);
+  //const [isHorizontal, setIsHorizontal] = useState(window.innerWidth <= 639);
+  const [isHorizontal, setIsHorizontal] = useState(false);
   const [value, setValue] = useState(0);
+
+  useEffect(() => {
+    const checkWindowSize = () => {
+      setIsHorizontal(window.innerWidth <= 639);
+    };
+
+    // Initial check
+    checkWindowSize();
+
+    // Listen for window resize events
+    window.addEventListener("resize", checkWindowSize);
+
+    // Cleanup listener on component unmount
+    return () => {
+      window.removeEventListener("resize", checkWindowSize);
+    };
+  }, []);
 
   const handleTabChange = (event, newValue) => {
     setValue(newValue);
   };
-
-  window.addEventListener("resize", () => {
-    setIsHorizontal(window.innerWidth <= 639);
-  });
-
   function TabPanel(props) {
     const { children, value, index, ...other } = props;
 

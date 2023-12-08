@@ -32,6 +32,3 @@ Kelsey - Software Engineer based in Santiago, Chile.
 ## License
 
 This project is open source and available under the [MIT License](LICENSE).
-
-
-The design takes inspiration from Gazi Jarin's website.

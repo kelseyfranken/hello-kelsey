@@ -26,15 +26,10 @@ function Landing() {
         <p className="pt-3 w-5/6 md:w-[500px] lg:w-[640px] text-justify text-lg tracking-wider max-sm:text-base max-sm:tracking-wide">
           I'm a Software Engineer currently based in Santiago, Chile. I have a
           strong focus and passion for{" "}
-          <span className="font-bold text-aqua">Frontend development</span>. I
-          thrive on crafting visually appealing and user-friendly interfaces,
-          fixing UI bugs, and ensuring accessibility standards are met. My
-          journey in the tech world extends beyond the Frontend, as I've also
-          ventured into{" "}
-          <span className="font-bold text-aqua">Full Stack development</span>,
-          harnessing the power of TypeScript and Python. I love all things
-          coding and I am always looking for new opportunities to learn and
-          grow.
+          <span className="font-bold text-aqua">Full Stack development</span>. I
+          focus on crafting visually appealing and user-friendly interfaces,
+          with a keen eye for optimization. I love all things coding and I am
+          always looking for new opportunities to learn and grow.
         </p>
         <Button
           variant="outlined"

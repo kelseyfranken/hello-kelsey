@@ -44,8 +44,8 @@ export default function JobsTabs() {
       jobTitle: "Software Engineer Web I",
       duration: "May 2023 - Present",
       description: [
-        "Developed an internal back office application using React and Next.js, boosting operational and attentional agent productivity while ensuring compliance with accessibility principles and bank security guidelines.",
-        "Contributed to leading the company's first project in React and Next.js, demonstrating technical leadership and a commitment to innovation.",
+        "Developed a React and Next.js powered internal Back Office web app, boosting operational efficiency while ensuring compliance with accessibility and security standards. The application is expected to save up to 21 hours per month, enhancing overall productivity.",
+        "Led the company’s first project in React and Next.js, demonstrating technical leadership and a commitment to innovation.",
       ],
     },
     {
@@ -64,7 +64,7 @@ export default function JobsTabs() {
       jobTitle: "Software Engineer Intern",
       duration: "Jan 2022 - Feb 2022",
       description: [
-        "Developed a custom component library in React, following a design system, to enhance development efficiency.",
+        "Built a custom component library in React, adhering to the company's design system, to enhance development efficiency.",
         "",
       ],
     },
@@ -89,7 +89,7 @@ export default function JobsTabs() {
   ];
 
   return (
-    <div className="flex flex-row gap-10 max-sm:flex-col max-sm:pl-8 max-sm:pr-12 h-96 max-sm:h-auto max-sm:min-h-[560px]">
+    <div className="flex flex-row gap-10 max-sm:flex-col max-sm:pl-8 max-sm:pr-12 h-80 max-sm:h-auto max-sm:min-h-[560px]">
       <Tabs
         orientation={isHorizontal ? "horizontal" : "vertical"}
         value={value}
@@ -129,7 +129,11 @@ export default function JobsTabs() {
                 return (
                   <li
                     key={i}
-                    className="before:content-['↳_'] before:text-aqua"
+                    className={`before:content-['↳_'] before:text-aqua mb-4 ${
+                      job.jobTitle === "Software Engineer Intern" && i === 1
+                        ? "hidden"
+                        : ""
+                    }`}
                   >
                     {descriptionItem}
                   </li>

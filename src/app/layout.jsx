@@ -5,7 +5,7 @@ import Sidebar from "@/components/Sidebar";
 const openSans = Open_Sans({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Hello Kelsey",
+  title: "Kelsey",
   description: "Welcome to my website!",
 };
 
